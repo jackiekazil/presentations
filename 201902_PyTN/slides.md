@@ -9,7 +9,7 @@ Note:
 
 ----
 
-![Izzy in Python Onesie](../images/izzy_in_python_onesie.jpg) <!-- .element height="60%" width="60%" -->
+![Izzy in Python Onesie](../media/izzy_in_python_onesie.jpg) <!-- .element width="80%" -->
 
 Note:
 About me...
@@ -36,7 +36,7 @@ What I hope you will learn in this talk...
 ----
 
 # Traffic example from Ethiopia
-[![Ethiopian traffic](../media/images/ethiopian_traffic.jpg)](https://youtu.be/UEIn8GJIg0E?t=22 "ethiopian_traffic")<!-- .element width="200%" -->
+[![Ethiopian traffic](../media/ethiopian_traffic.jpg)](https://youtu.be/UEIn8GJIg0E?t=22 "ethiopian_traffic")<!-- .element width="200%" -->
 
 Note:
 Let's die right in.
@@ -78,7 +78,7 @@ Osccilliation example
 
 
 
-![](../media/images/modeling_zombies.png) <!-- .element width="50%" -->
+![](../media/modeling_zombies.png) <!-- .element width="50%" -->
 
 Note:
 - Mathematical Modelling of Zombies by Robert Smith?
