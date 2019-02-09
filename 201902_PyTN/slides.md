@@ -41,7 +41,8 @@ How to increase Python presence in education?
 * Deadline Feb 18
 
 Note:
-- PSF Board Committee for Python in Education is looking for ideas on how the PSF can help members of our community increase the presence of Python in education.
+- PSF Board Committee for Python in Education is looking for ideas...
+- ...how the PSF can help members of our community increase the presence of Python in education.
 - After we collect ideas, if we think something is exciting, we will come back and request a proposal.
 
 ----
@@ -118,15 +119,16 @@ Note:
 Note:
 * Why listen to me? I am partically an expert
 * Hoping to finish by 2020.
-* RE: Expert - You don't need math
+* Some of the work that I mention today IS my PhD
+* At work, I model our IT infastructure and app interactions and dependencies
 
 ----
 
 ## Overview of today's talk
 
-* Introduction to complexity science by example
-* How it fits in the ecosystem of data science
-* What tools exist in Python
+* Introduction to complexity systems
+* What is complexity science or the study of complex systems
+* Considerations for building models
 * Some of the practical applications
 
 
@@ -582,7 +584,7 @@ Note:
 * Mesa functionality add - mesa-geo (not to be confused with GeoMesa)
 * Agent & env based - econ-mesa
 * Future goal is to have a whole ecosystem (like Django packages)
-* People can mix and match schools of thoought
+* People can mix and match schools of thought
 
 ----
 
@@ -603,7 +605,7 @@ Note:
 
 * Framework for reuse
 * Decoupled / decentralized
-* Domain experts “own” components
+* Domain experts "own" components
 * Reproducibility
 * Building models on accepted truths
 
@@ -616,7 +618,7 @@ Note:
 
 ----
 
-# So, How running from zombies is the same as market behaviors?
+# So, how is running from zombies the same as market behaviors?
 
 
 Note:
