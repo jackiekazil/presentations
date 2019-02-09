@@ -4,27 +4,132 @@ By Jacqueline Kazil
 
 PyTennessee, February 9, 2018
 
-Note:
--
-
 ----
 
 ![Izzy in Python Onesie](../media/izzy_in_python_onesie.jpg) <!-- .element width="80%" -->
 
 Note:
-About me...
-- PSF, Python, Education, Finance, PyLadies Auction
-- Me and complexity - how to got into it
+- I do a lot in the Python community.
+- I will use this photo forever.
+
+Before I get into my main part of my talk, there are two items of housekeeping.
 
 ----
 
+## Python Software Foundation
 
-# Overview of today's talk
+https://www.python.org/psf/
+
+* The PSF protects the Python trademark
+* Gives out grants to support Python events and Python development
+* Organizes and hosts PyCon US
+* Provides fiscal sponsorship support
+
+& Much much more <!-- .element: class="align_left" -->
+
+
+----
+
+## Education Request for Ideas
+
+http://bit.ly/PSF-RFI-EDU
+
+How to increase Python presence in education?
+
+* Really open ended
+* Small or big - $10 to > $10 million
+* Deadline Feb 18
+
+Note:
+- PSF Board Committee for Python in Education is looking for ideas on how the PSF can help members of our community increase the presence of Python in education.
+- After we collect ideas, if we think something is exciting, we will come back and request a proposal.
+
+----
+
+## PyCon 2019: Cleveland, OH
+
+https://us.pycon.org/2019/
+
+* Tutorials: May 1-2
+* Talks & events: May 3-5
+* Sprints: May 6-9
+
+..and PyCon 2020: Pittsburgh, PA
+
+
+Note:
+- Cleveland is a short non-stop flight from Nashville.
+- You should stay for sprints - get experience.
+- PyCon will probably move West
+- PyCon brings me to mention the Maintainers summit
+
+----
+
+## PyCon: Maintainers Summit
+
+http://bit.ly/maintain2019
+https://www.papercall.io/pycon-maintainers-summit
+
+* First year thru hatchery program
+* Discussion of tooling, community, funding, and sustainability
+* CFP open until March 15 for lightening talks
+
+Note:
+* The vast majority of libraries that exist have a fragile number of maintainers.
+* In August 2017, all active Mesa core members fell off the face of the earth.
+
+----
+
+## Things I just mentioned
+
+* Python Software Foundation (PSF)
+* PSF Education Request for Ideas (Feb 18)
+* PyCon 2019: Cleveland, OH (May 1 to 9)
+* Maintainers Summit & CFP (March 15)
+
+
+Note:
+
+If you have questions about any of these things, please don't
+And now for the regular scheduled talk...
+
+----
+
+## The Real Talk
+
+... modeling the complex world we live in.
+
+part tech talk, but also
+
+part rethinking how you see the world.
+
+
+Note:
+* I tried to pick something everyone can enjoy.
+* part data science, part tooling, part rethinking how you see the world.
+* I hope you all get something from this talk.
+
+
+----
+
+![Cartoon of Jackie graduating with PhD](../media/phd2020.png) <!-- .element width="80%" -->
+
+
+Note:
+* Why listen to me? I am partically an expert
+* Hoping to finish by 2020.
+* RE: Expert - You don't need math
+
+----
+
+## Overview of today's talk
 
 * Introduction to complexity science by example
 * How it fits in the ecosystem of data science
 * What tools exist in Python
 * Some of the practical applications
+
+
 
 Note:
 What I hope you will learn in this talk...
@@ -32,727 +137,516 @@ What I hope you will learn in this talk...
 2. Some might dig into the tools
 3. If nothing else, u learn how to survive a Zombie attack
 
-
 ----
 
-# Traffic example from Ethiopia
-[![Ethiopian traffic](../media/ethiopian_traffic.jpg)](https://youtu.be/UEIn8GJIg0E?t=22 "ethiopian_traffic")<!-- .element width="200%" -->
+## Tooling
+
+* Mesa (Python) - Agent-based modeling
+* Networkx (Python) - Network/graph analysis
+* Netlogo (Logo) - Agent-based modeling
 
 Note:
-Let's die right in.
-This is an intersection in Ethiopia.
-It has no traffic lights. So, how does it work?
-Flocking.  (Describe the behavior and individual decisions.)
-
-[//]: # ()
-
+* Just in case you want to play around with some of the tools while I talk
+* Mention examples
 
 ----
 
-  <video>
-    <source data-src="video.webm" type="video/webm" />
-    <source data-src="video.mp4" type="video/mp4" />
-  </video>
+## "Your watch is complicated, your family is complex"
 
-
-
-----
-
-
-
-
-
-
-
-
-Zombie example:
-
-Netlogo
-
-Swarm example
-Osccilliation example
-
-
-
-
-
-
-
-![](../media/modeling_zombies.png) <!-- .element width="50%" -->
+Said by David Krakauer, Evolutionary Biologist
 
 Note:
-- Mathematical Modelling of Zombies by Robert Smith?
-- Robert Smith? with a question mark, not the lead singer of the cure
+* A watch is predictable, a family is not
+* The mechanisms in watch are perfectly rational
+* I know my family is not
+* Love you all!
 
-
-
-----
-
-Complexity quote...
-
-
-"Your watch is complicated, your family is complex."
-Great Krakauer, Santa Fe Institute
-
-
+But what does this mean?
 
 ----
 
-
-# PREVIOUS CONTENT ------- DELETE
-
-OR
-
-# How the government made me a better programer
-
-By Jackie Kazil
-
-Note:
-- During this talk I will highlight a series of lessons.
-- These can be used in gov OR in private sector
-
-
-----
-
-Tech in government has changed a lot...
-
-.. and so have I. <!-- .element: class="fragment" -->
-
-----
-
-First, a little about myself...
-
-- Worked in government from 2011 to 2015
-- Presidential Innovation Fellow 2013 to 2014
-- Python Software Foundation Board member
-- PyLadies leader - internationally and in DC
-- Board member of Byte Back
-- PSF Fellow
-- ... and other random things
-
-Note:
-Byte Back is an organization that teach basic digital literacy skills in order to
-put individuals into living wage careers.
-
-----
-
-![](../images/book.png) <!-- .element width="40%" -->
-
-----
-
-# El Sentinel
-
-![El Sentinel screenshot](../images/elsentinel.png) <!-- .element width="50%" -->
-
-Note:
-Trabajé como periodista para un periódico español en el sur de Florida.
-Donde pretendo hablar español.
-
-----
-
-![Moved to DC](../images/movedtoDC.jpg)
-
-Note:
-I came to DC 10 years ago!
-These heads are from the baseball team in DC
-
-----
-
-Things have changed a lot!
-
-![Izzy in Python Onesie](../images/izzy_in_python_onesie.jpg) <!-- .element height="60%" width="60%" -->
-
-Note:
-Went from journalist to civil servant.
-And had a baby.
-
-----
-
-![Library of Congress](../images/LOC.jpg) <!-- .element height="80%" width="80%" -->
-
-
-loc.gov
-
-Note:
-- 2011 to 2013
-- This is not where the great big change happen
-- When I walked in, this was a well functioning team
-- There were pockets of this in government
-- Tech stack was Python, Django, & Postgres
-
-----
-
-The team worked on lots of important things...
-
-----
-
-
-![LOC is down](../images/locdown.png)
-
-Note:
-Like this one.
-
-----
-
-![LOC is down](../images/locdown.png)
-
-Note:
-And this one.
-
-----
-
-![LOC is down](../images/locdown.png)
-
-Note:
-And this one. This one is my favorite.
-
-----
-
-Lesson: If you are not on the cloud, you need to move, otherwise someone will take screenshots of your downed website and share it at a conference.
-
-Note:
-- This is why LOC is having these problems.
-- The work doesn't matter as much I had the honor to work in the corner of government that was functioning well.
-- However,...
-
-----
-
-Lesson: A team only functions as well as the environment in which it is run.
-
-Note:
-- Hence why you are seeing the projects ast they are today.
-- If you don't give you people the proper tools, they can't do their job.
-
-----
-
-## Why wouldn't someone move to the cloud?
-
-Note:
-- Because they are afraid of risk
-- & they have issues w/ buecracy
-----
-
-Managing data centers is hard. If that is not your business, pay someone else to do it for you.
-
-----
-
-If fact, deploying code is one of the hardest things to do in government.
-
-It can take six months to more than a year.
-
-Note:
-- Why?
-- Because if you don't deploy, then you won't have problems.
-- It is easier to say 'no' than to say 'yes'
-
-----
-
-## Lesson: Chesterton's fence
-
-![A fence](../images/fence.jpeg)
-
-Note:
-- Just because the fence doesn't have a clear purpose, work to understand it.
-- First understand the historical context first - it can help you in the long run.
-- Deploying is hard, because people are risk averse in government.
-- Same reason for the cloud.
-- "if it is not broken, then why fix it?"
-
-----
-
-Automated deployments to the cloud == less risk.
-
-Note:
-- Because if there is an issue, you can deploy a fix quickly
-
-----
-
-Many small deployments are less risky than one single, large deployment.
-
-A - B < A - C
-
-Note:
-- Because the changes are incremental.
-- The delta between A & B is less than A & C.
-- Each change has less impact.
-
-----
-
-We can learn a lot about the way tech worked (or didn't work) through its devs and deployment processes.
-
-----
-
-### Regulation
-
-Less regulation <--------------------------> More regulation
-
-Note:
-- Less regulation == Your cousin wins the contract
-- More regulation == Your friend wins the contract, because they are the only ones who can navigate.
-- Neither your cousin or your friend are experts in the work.
-- Which means you end up with situations like...
-
-----
-
-![](../images/fema.png) <!-- .element width="75%" -->
-
-Note:
-- One person won this contract and hired a wedding company to make the meals.
-- They made 50,000 out of 30 million that were required.
-- Why would you hire a wedding cater & not someone who works in truly massive meal preparation
-
-----
-
-![](../images/hc.png)
-
-healthcare.gov
-
-Note:
-- Slow, locks up users, drops them, bad data.
-- This system requires special consideration, b/c secure data.
-- 55 contractors -- all were confident in their system, but no end to end testing
-- I don't know what happened, but I imagine somewhere I dev said... this is not going to work.
-
-----
-
-### Meanwhile...
-
-----
-
-![](../images/CFPB.png)
-
-cfpb.gov
-
-Note:
-- While I was at LOC, the agency was started in 2011 in response to the financial crash of 2008 to protect consumers.
-- They set an example for what tech should be like in government.
-- However, they also had a clean slate.
-- Much of their work was and is in Python!
-- I almost went to work there in 2013, but didn't.
-
-----
-
-President Obama wanted to bring "Silicon Valley" entrepreneurs and engineers into government.
-
-So, he appointed Todd Park as the second CTO of the U.S. in March 2012.
-
-
-----
-
-### Todd created the Presidential Innovation Fellows (PIF)
-
-- Inspired by Code for America
-- Short "tours of duty" to work on projects with the potential to save lives, money, create jobs, and make government more efficient
-- There were 18 fellows in the first round, now...
-
-Note:
-- The purpose was to attract talent and try to get them to stay after they finished their "tour of duty"
-
-----
-
-![](../images/pif.png) <!-- .element width="75%" -->
-
-presidentialinnovationfellows.gov
-
-Note:
-- 122 Fellows as of late Early 2018
-
-----
-
-Lesson: Create a fellowship and give the fellows lots of freedom and air cover to attract top talent.
-
-----
-
-Application due during PyCon 2013
-
-Note:
-- Heard about the PIF program during a happy hour from one of those 18.
-- I wasn't going to submit, but the application was easy, so I did.
-- I received 3 interviews, 2 offers
-
-----
-
-![](../images/thestreet.png) <!-- .element width="55%" -->
-
-Note:
-- Those two offers were across the street from each other.
-- The good news is that if I wasn't happy at FEMA, Dept of education told me tos stop by on my home
-
-
-----
-
-Lesson: Do not *not* pursue an opportunity. Apply for anything that interests you.
-
-Don't let imposter syndrome get in the way of your goals.
-
-----
-
-![](../images/geoq.png) <!-- .element width="65%" -->
-
-github.com/ngageoint/geoq
-
-Note:
-- My mission: disaster response and recovery.
-- Get money into the hands of people who need it.
-- This project used in diasters in Moore, Oklahoma & Colorado Floods.
-- But also internationally: Typhoon Maysak, Nepal Earthquake, Saipan - Typhoon Soudelor
-
-----
-
-Lesson: Rewrite versus build upon -- carefully consider your path and make sure you are not being biased.
-
-Note:
-- The project was originally written in Ruby -- but after a careful evaluation, it was best to rewrite in Django / Python.
-
-----
-
-### Meanwhile...
-
-Note:
-- As I was finishing my tour of duty, there was a group of folks looking to make the work that PIFs were doing more pernament, because one person for 6 months to one year wasn't enough.
-- During its 2nd year, the PIFs was operationalized inside the G.S.A. and there was growing discussion about how to bring folks in for longer than 6-12 months.
-
-----
-
-![](../images/18F.png) <!-- .element width="50%" -->
-
-18f.gov
-
-Note:
-- 18F is a digital consultancy FOR the U.S. government INSIDE the U.S. government.
-- 2014
-- GSA is a federal agency that employs about 20,000 people across the country. It handles government wide policy, real estate, procurement, and is basically the admin & operations team for the federal government.
-
-----
-
-And they used Python, Javascript, and Ruby
-
-----
-
-What were the goals of 18F?
-
-Note:
-- 18F will transform how the U.S. Government builds and buys digital services -- remember those contract issues?
-- builds and buys in a human-centered, design-centric, agile, open, and data-driven way.
-
-----
-
-
-Delivery is the strategy.
-
-Note:
-- 18F was influence by GDS (Government Digital Services)
-- As Mike Bracken of the UK’s Government Digital Service says, “the strategy is delivery.”
-
-----
-
-Lesson: Always be shipping.
-
-Note:
-- If you are not shipping code, then what are you doing?
-
-----
-
-As I mentioned earlier, software deployment is hard in government... so is hiring.
+![](../media/complexity_policy_book.png) <!-- .element width="40%" -->
 
 
 Note:
-- hiring can take as long as 6 to 9 months
+* Roland Kuper highlights a model in his book
+* ... which tests the impact of adaptive cruise control on road capacity
+* Who here is from a place with terrible traffic? (you are going to love this)
+* If 100% of new cars had adaptive cruise control..
+* .. how much would road capacity increase in 1 year?
+* 30%
+
 
 ----
 
-To make 18F work and to make it successful, we were "Hacking Bureaucracy".
-
-----
-
-## Lesson: "Hackhing the Bureaucracy"  according to Hillary Hartley
-
-- Find innovators inside of the government who have solved similar problems. <!-- .element: class="fragment" -->
-- Engage the stakeholders early and often. <!-- .element: class="fragment" -->
-- Set up an MVP to get started quickly & iterate. <!-- .element: class="fragment" -->
-- Make sure you are working with real users. <!-- .element: class="fragment" -->
-- Always stay aligned with the rules of the bureacracy. <!-- .element: class="fragment" -->
-- Formalize the process/solution for reuse. <!-- .element: class="fragment" -->
-
-----
-
-Lesson: It's okay to hack your way around the rules, but you must stay aligned with them. - Hillary Hartley
-
-----
-
-![](../images/18F2014.png)
+## Traffic in Ethiopia
+[![Ethiopian traffic](../media/traffic_shot.png) <!-- .element width="80%" -->](https://youtu.be/UEIn8GJIg0E?t=22 "ethiopian_traffic")
 
 Note:
-18F grew to over 150 people in about 1.5 years.
+* This is an intersection in Ethiopia.
+* It has no traffic lights. So, how does it work?
+* Flocking.  (Describe the behavior and individual decisions.)
+
+
 
 ----
 
-## Core tenants of operation at 18F
+## Birds flocking
 
-----
-
-The needs of the user should drive all decisions.
-
-----
-
-Lesson: Everything is an API to
-everything else. - Jon Bodner
+[![](../media/flocking.png)<!-- .element width="80%" -->](http://www.youtube.com/watch?v=bb9ZTbYGRdc "")
 
 Note:
-- Every engineer needs to learn User research
-
-----
-
-![](../images/18FMethod.jpg)
-
-methods.18f.gov
-
-Note:
-- These are great for engaging users and bringing human-centered design to engineering.
-- Here are some examples....
-
-----
-
-## Journey Map
-
-![](../images/journeymap.png)
-
-----
-
-## Affinity Map
-
-![](../images/afin1.png)
-
-Note:
-- https://docs.google.com/presentation/d/1vIuruOSOV2LZHbVbWkKZExmOhCJ8dQM4UmS6uAqYNO0/edit#slide=id.g1508aa5191_0_704
-
-----
-
-## Affinity Map
-
-![](../images/afin2.png)
-
-----
-
-## Dot Vote
-
-![](../images/dotvote1.png)
-
-----
-
-## Dot Vote
-
-![](../images/dotvote2.png)
-
-----
-
-## Dot Vote
-
-![](../images/dotvote3.png)
-
-----
-
-## Dot Vote
-
-![](../images/dotvote4.png)
-
-----
-
-## Dot Vote
-
-![](../images/dotvote5.png)
+* Each bird is following the leader or their neighbor
+* In some ways this systems are completely different
+* But in others they are not
 
 
 ----
 
-While we are on the topic of giving back...
 
-## Some More Projects that ~~state & local governments~~ anyone can use
-
-1. Analytics hub
-1. Quick mini-sites for content
-1. Market research for procurement
-1. Help small businesses find opportunities
-
-
-bit.ly/7projectsBy18F
-
-Note:
-- Let's move on to the next core value...
-
-----
-
-Open By Default
-
-Note:
-- 18F opens everything by default
-- Sadly the government does not.
-
-----
-
-![](../images/osgov.png) <!-- .element width="75%" -->
-
-opensource.org/personas/government
-
-Note:
-- This is a list of policies, news, and laws in select countries.
-
-----
-
-![](../images/githubgov.png)
-
-government.github.com/community
-
-Note:
-- You can see what governments are building & which are on github.
-
-----
-
-Lesson: Not all projects will work for all countries. People are different.
-
-Example: Estonia versus United States
-
-Note:
-- Estonia is a leader in the digital gov space.
-- They created a digital identity for their people & now everyone uses it.
-- If the U.S. did this the same time that Estonia did, people in the U.S. may have freaked out, b/c culturally they like their privacy.
-- On to the next core value...
-
-----
-
-Be Data Driven.
-
-----
-
-![](../images/ana1.png)
-
-analytics.usa.gov
-
-Note:
-- This is one the tools available that I mentioned earlier.
-- It publishes your analytics to the world.
-- There were 2.68 billion visits over the past 90 days.
-
-----
-
-![](../images/ana2.png) <!-- .element width="50%" -->
-
-Note:
-- It is tax time for Americans and they are looking for refunds from the government.
-
-----
-
-![](../images/ana3.png)
-
-Note: Weather, earthquakes, etc are popular as well.
-
-----
-
-![](../images/ana4.png)
-
-Note:
-- No matter what time of year, USCIS is always on this list.
-- It is one of the highest touch points of gov
-- While other people will interact once a year with IRS, they will come back to this page 10 times.
-
-
-----
-
-Lesson: Don't assume you know what people want. Use data.
-
-Note:
-- I wouldn't have guessed that USCIS would consistently be most popular.
-- With dot voting as a data point -- we might have guessed the winner of that as well.
-- And the last core value...
-
-----
-
-Be Agile.
-
-Note:
-- Not going to spend a lot of time on this.
-- There are plenty of talks on this topic out there.
-
-
-----
-
-Lesson: Explicitly write this into your contract and be prepared to cancel the contract when other parties want to practice waterfall or agile-fall.
-
-Note:
-- Once I had a partner hand me 86 pages of requirements before we event started coding.
-- They said they were "agile".
-- They didn't want to practice agile.
-- Nope. Not doing it.
-
-----
-
-![](../images/usdslogo.png) <!-- .element width="80%" -->
-
-usds.gov
-
-Note:
-- Lastly, I wanted to give a shout out to USDS.
-- They were a sister org that we worked with.
-- Oversimpled they were like the fire fighters and we were like the delivery team.
-
-----
-
-![](../images/usdsplays.png) <!-- .element width="85%" -->
-
-playbook.cio.gov
-
-Note:
-- They summed up a lot of what was happening in gov in a great play book
-
-
-----
-
-And where are they now?
-
-----
-
-![](../images/18F.png) <!-- .element width="50%" -->
+![](../media/complex_systems_organizational_map.jpg) <!-- .element width="65%" -->
 
 
 Note:
-- According to Fed Scoop -- 24.5% of 18F talent has left.
-- 18F is now under the procurement / contracts arm of the agency
-- However, there is a new office of American Innovation?
+* "Complex systems" means a lot
+* It even encompasses Machiene Leaning
+
+Source: https://en.wikipedia.org/wiki/File:Complex_systems_organizational_map.jpg
 
 ----
 
-![](../images/piflogo.png)
+![](../media/map_of_complexity_science.png) <!-- .element width="100%" style="max-width: 150%;"-->
+
+2018 Map of Complexity Sciences by Brian Castellani
+
 
 Note:
-- last bill signed into law by President Obama made statutory the Presidential Innovation Fellows
-- The last act as president was for Obama to make the program prenament
+* You can see how the science changed over time.
+* Started in 1960s/1970s.
+* Since then computational power has improved and so has software.
+* I can't cover everything, so I am going to focus on two areas
+
+Source: http://www.art-sciencefactory.com/complexity-map_feb09.html
 
 ----
 
-![](../images/cfpblogo.png)
+## Agent-based models
+
+![](../media/map_abms.png) <!-- .element width="100%" style="max-width: 150%;"-->
+
 
 Note:
-- A bunch of tech employees went to 18F
-- The current government is not fond of the agency -- views it as too much regulation
+* Thomas Schelling built one of the easiest and well know models.
+* Segregated neighborhoods can arise not just by active racism
+* but also due to a mild preference for neighbors of the same ethnicity
+* Rob Axtell (GMU) did a lot of work in economics modeling
+
+Source: http://www.art-sciencefactory.com/complexity-map_feb09.html
+
 
 ----
 
-Lastly...
+## What is agent-based modeling?
 
-![Library of Congress](../images/LOC.jpg) <!-- .element width="75%" -->
+ABMs, MAS, Game theory, Cellular automata, Microsimulation, Individual-based models. Complex Simulations...
 
 Note:
-- During the making of this talk a bird told me that they were in definitely moving to the cloud.
+* ABMs go by many names
+* MAS is related, but generally more applied. Focused on solution, not simulation.
+* Game theory: related, but we want less than perfectly rational agents, no closed-form solutions.
+* Cellular automata: basically a subset of ABM
+* Microsimulation: sometimes used in geography to mean ABM
+* Individual-based model: what ABM are sometimes called in ecology.
 
 ----
 
-![](../images/18fjump.jpg)
 
-Questions?
+## What is agent-based modeling?
 
-jackiekazil@gmail.com
+Computer simulation <!-- .element: class="align_left pad_l" -->
+
+Consisting of agents <!-- .element: class="align_left pad_l" -->
+
+... interacting with one another <!-- .element: class="align_left pad_l" -->
+
+... in order to study an overall system <!-- .element: class="align_left pad_l" -->
+
+
+----
+
+## Components of a model
+
+Space <!-- .element: class="align_left pad_l" -->
+
+Agents <!-- .element: class="align_left pad_l" -->
+
+Time <!-- .element: class="align_left pad_l" -->
+
+Visualization (not required) <!-- .element: class="align_left pad_l" -->
 
 
 Note:
-- YAY! LOC!!!!!
-- Finally... if you are interested in working in Puerto Rico, they are talking about making changes!
+* Models have space, agents, time, and possibly a visualization element,
+* You can run headlesss, especially when you are doing parameter sweeps.
+
+
+----
+
+## Conway's game of life
+
+![](../media/conway.gif) <!-- .element width="75%"-->
+
+
+Note:
+* You could say this is an ABM in its simplest form
+* These shapes are not agents, but each cell is one.
+* Rule: Cells live or die based on the number of cells around them
+* Early example where individual rules give rise to emergent behaviors
+
+Let’s look at another tool - network libraries
+
+Source:
+https://en.wikipedia.org/wiki/Conway's_Game_of_Life#/media/File:Gospers_glider_gun.gif
+
+
+----
+
+
+## Networks
+
+![](../media/map_network_science.png) <!-- .element width="100%" style="max-width: 150%;"-->
+
+
+Note:
+* Two names to note here...
+* Duncan Watts - Small Worlds
+* Albert-Lazio Barabasi - Scale free networks
+* Both have written very accessible / easy reads on networks
+
+Source: http://www.art-sciencefactory.com/complexity-map_feb09.html
+
+----
+
+## General Network types
+
+![](../media/network_types.png) <!-- .element width="100%"-->
+
+Source: Huang, Chung-Yuan, Sun, Chuen-Tsai and Lin, Hsun-Cheng (2005).
+
+Note:
+* Small-world - 6 degrees of separation; Stanley Milgram experiment
+* Kevin Bacon
+* Scale free - internet; rich get richer
+
+
+Source: Huang, Chung-Yuan, Sun, Chuen-Tsai and Lin, Hsun-Cheng (2005). 'Influence of Local Information on Social Simulations in Small-World Network Models'. Journal of Artificial Societies and Social Simulation 8(4)8 <http://jasss.soc.surrey.ac.uk/8/4/8.html>.
+
+
+----
+
+![](../media/networks_sf_powerlaw.png) <!-- .element width="85%"-->
+
+
+Note:
+* Scale free follow power law distribution
+* Many have one connection, few have many
+
+
+Barabasi, A. L. (2003). Linked: How everything is connected to everything else and what it means.
+
+
+----
+
+# Modeling
+
+# "the right thing"
+
+Note:
+* The world is big. How do you know what to include in your model? That depends.
+* Take my example of modeling applications - deployment on hot chicken Tuesday
+* Do we need to model Hot Chicken Tuesday?
+
+
+----
+
+## Segregation Model
+
+![](../media/mc1.png) <!-- .element width="125%"-->
+
+
+Note:
+* classic model from 1971
+* Agents can be happy or sad based on their neighbors (javascript)
+* This adds a level of agency above the game of life --
+* the agent moves to another cell
+* Small individual bias can lead to large collective bias.
+
+
+----
+
+
+## Predator-Prey Dynamics
+
+![](../media/mc2.png) <!-- .element width="115%"-->
+
+
+Note:
+*  Ecological model
+* Sheep eat grass, Wolf eat sheep, Both reproduce
+* This adds interactions with environment
+
+Source: Wilensky, U. (1997). NetLogo Wolf Sheep Predation model. http://ccl.northwestern.edu/netlogo/models/WolfSheepPredation. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+
+----
+
+
+## Political Dynamics
+
+![](../media/mc3.png) <!-- .element width="85%"-->
+
+
+Note:
+* Agents aren’t individual people or animals
+* They are simulated states that interact and fight
+* Repast -- JAVA w/ custom IDE
+
+
+
+----
+
+## Migration Modeling
+
+![](../media/mc4.png) <!-- .element width="85%"-->
+
+
+Note:
+* Simulation of displaced people flows in East Africa
+* using real-world environmental, conflict and road network data.
+* Example takes us from simulated worlds to the real world
+* Real life simulation
+* This is MASON - JAVA
+
+http://socialcomplexity.gmu.edu/projects/easternafrica/
+
+----
+
+
+## Epidemiological Simulation
+
+![](../media/mc5.png) <!-- .element width="125%"-->
+
+
+Note:
+* Isn't hypothetical, actually used by CDC
+* Model from Los Alamos National Lab
+* This is a 1:1 model
+* Infectious disease simulation using census data, clinic locations, etc.
+* Hand coded
+
+----
+
+## Demos
+
+
+* Predator-Prey Dynamics in Netlogo
+* Schelling in NetLogo
+* [Schelling by Ncase](https://ncase.me/polygons/)
+
+----
+
+## Modeling on the front-end
+
+* Parable of the Polygons (Javascript) - [ncase.me/polygons](ncase.me/polygons)
+* Agent Base (Javascript) - [bit.ly/abm-ants](bit.ly/abm-ants)
+* Agent Script (CoffeeScript) - [agentscript.org](agentscript.org)
+
+----
+
+## Modeling on the back-end
+
+* NetLogo (Logo) - [bit.ly/abm-netlogo](bit.ly/abm-netlogo)
+* MASON (Java) - [bit.ly/abm-mason](bit.ly/abm-mason)
+* RePast (Java) - [bit.ly/abm-repast](bit.ly/abm-repast)
+* Mesa (Python) - [bit.ly/abm-mesa](bit.ly/abm-mesa)
+
+
+Note:
+* Guido Darpa grant 2001
+* In the grant - Logo, was nice, but we are done with it.
+* Netlogo was pulling a Madonna
+
+----
+
+## Chesterton's Fence
+
+
+![](../media/fence.jpg) <!-- .element width="55%"-->
+
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence)
+
+
+Note:
+* Reference to  G. K. Chesterton's 1929 book The Thing.
+* If you are going to delete or overrid something, you should understand it first
+* And aknowledge it is no longer valid
+
+----
+
+## Python Research
+
+![](../media/python_research.png) <!-- .element width="100%"-->
+
+Note:
+* There was nothing that existed when we got started.
+* There seemed to a problem of libraries belonging to one person and dying
+* Indra started the same time we did.
+
+
+----
+
+## Demo of Models
+
+* Docs: [bit.ly/abm-mesa](bit.ly/abm-mesa)
+* Code: [github.com/projectmesa/mesa](bit.ly/abm-mesa)
+
+Note:
+* Let's look at some models!
+
+
+----
+
+## How to run Demos
+
+You install the requirements for that model
+
+```
+$ pip install -r requirements.txt
+```
+
+```
+mesa runserver
+```
+
+Browser opens to http://127.0.0.1:8521/
+
+
+Note:
+* Runserver - just like Django
+* We used port 8521, because 8888 is used for jupyter notebooks
+* Zipcode in AZ
+
+----
+
+![](../media/mesa_diagram.png) <!-- .element width="70%"-->
+
+Source: Masad and Kazil (2015).
+
+Note:
+* Model has a scheduler and space
+* The scheduler activates the agent
+* Viz server get data from Space
+* Server generates Browser page & all modules on that page
+* Batch Runner, as seen in the schelling example, allows for data sweeps
+* Data collector, collects data to analyze later
+
+Source: Masad, D., & Kazil, J. (2015). MESA: an agent-based modeling framework. In Proceedings of the 14th Python in Science Conference (SCIPY 2015) (pp. 53-60).
+
+
+----
+
+## Mesa's Scheduling Feature
+
+![](../media/mesa_scheduling.png) <!-- .element width="70%"-->
+
+Note:
+* Notebook example & source: Prisoner’s dilemma
+* Sequential activation, where agents are activated in the order they were added to the model
+* Random activation, where they are activated in random order every step
+* Simultaneous activation, simulating them all being activated simultaneously.
+* Inspired by Kenneth Commer’s paper in 2014
+* Consider your schedule works today when queueing up processes - system state
+
+[Comer2014] Comer, Kenneth W. “Who Goes First? An Examination of the Impact of Activation on Outcome Behavior in AgentBased Models.” George Mason University, 2
+
+
+----
+
+## Mesa Packages
+
+![](../media/mesa_packages.png) <!-- .element width="70%"-->
+
+Note:
+
+* Mesa functionality add - mesa-geo (not to be confused with GeoMesa)
+* Agent & env based - econ-mesa
+* Future goal is to have a whole ecosystem (like Django packages)
+* People can mix and match schools of thoought
+
+----
+
+![](../media/multilevel_mesa.png) <!-- .element width="80%"-->
+
+Source: [Multi-Level Mesa](https://github.com/tpike3/ml_mesa)
+
+Note:
+* Most recently created by Tom Pike, a colleague at George Mason.
+* It is in progress.
+* ML_Mesa allows for holonic (Tom taught me that word) organization to models
+* Neighborhoods, houses, families, people, etc
+
+
+----
+
+## Our goals with Mesa
+
+* Framework for reuse
+* Decoupled / decentralized
+* Domain experts “own” components
+* Reproducibility
+* Building models on accepted truths
+
+Note:
+* Decouple - Django versus Flask
+* Well established models would be well tested and turn into "accepted truths"
+* ie We accept that the Request library is going to do what is does
+* If it doesn't then we submit a ticket or PR
+
+
+----
+
+# So, How running from zombies is the same as market behaviors?
+
+
+Note:
+* You learned a little about the domain, practical examples, tooling...
+* So, how is running from zombies the same as market behaviors?
+* It is the logic and reasoning in the decisions with make
+* Play neuron video
+* Short answer: actors are looking to survive, rational versus irrational
+* Long answer is in this books
+
+----
+![](../media/modeling_zombies.png) <!-- .element width="50%"-->
+
+
+Note:
+* This book is the long answer.
+* I have a copy up front if you want to see it
+* Yes, the author's real name is Robert Smith?
+
+
+----
+
+
+# The End.
+
+Questions? <!-- .element: class="align_left pad_l" -->
+
+@jackiekazil <!-- .element: class="align_left pad_l" -->
+
+jackiekazil@gmail.com <!-- .element: class="align_left pad_l" -->
+
+github.com/projectmesa/mesa <!-- .element: class="align_left pad_l" -->
+
+
