@@ -209,7 +209,7 @@ Note:
 
 Note:
 * "Complex systems" means a lot
-* It even encompasses Machiene Leaning
+* It even encompasses Machine Learning
 
 Source: https://en.wikipedia.org/wiki/File:Complex_systems_organizational_map.jpg
 
@@ -252,11 +252,11 @@ ABMs, MAS, Game theory, Cellular automata, Microsimulation, Individual-based mod
 
 Note:
 * ABMs go by many names
-* MAS is related, but generally more applied. Focused on solution, not simulation.
+* MAS related - Focused on solution, not simulation.
 * Game theory: related, but we want less than perfectly rational agents, no closed-form solutions.
-* Cellular automata: basically a subset of ABM
-* Microsimulation: sometimes used in geography to mean ABM
-* Individual-based model: what ABM are sometimes called in ecology.
+* CA: subset of ABM
+* Microsim: used in GIS to mean ABM
+* Individual: ABMs are called in ecologywhat ABM are sometimes called in ecology.
 
 ----
 
@@ -334,7 +334,9 @@ Source: http://www.art-sciencefactory.com/complexity-map_feb09.html
 Source: Huang, Chung-Yuan, Sun, Chuen-Tsai and Lin, Hsun-Cheng (2005).
 
 Note:
-* Small-world - 6 degrees of separation; Stanley Milgram experiment
+* Small-world - 6 degrees of separation
+* Stanley Milgram experiment 1969
+* Milgram is also known for shocking obience experiments like you may have see in Ghost busters
 * Kevin Bacon
 * Scale free - internet; rich get richer
 
@@ -353,7 +355,6 @@ Note:
 
 
 Barabasi, A. L. (2003). Linked: How everything is connected to everything else and what it means.
-
 
 ----
 
@@ -465,10 +466,10 @@ Note:
 
 ## Modeling on the back-end
 
-* NetLogo (Logo) - [bit.ly/abm-netlogo](bit.ly/abm-netlogo)
-* MASON (Java) - [bit.ly/abm-mason](bit.ly/abm-mason)
-* RePast (Java) - [bit.ly/abm-repast](bit.ly/abm-repast)
-* Mesa (Python) - [bit.ly/abm-mesa](bit.ly/abm-mesa)
+* NetLogo (Logo), 1999 - [bit.ly/abm-netlogo](bit.ly/abm-netlogo)
+* MASON (Java), 2003 - [bit.ly/abm-mason](bit.ly/abm-mason)
+* RePast (Java), 2006 - [bit.ly/abm-repast](bit.ly/abm-repast)
+* Mesa (Python), 2015 - [bit.ly/abm-mesa](bit.ly/abm-mesa)
 
 
 Note:
